@@ -17,8 +17,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="h-full">
-      <body className={cn("relative h-full font-sans antialiased", inter.className)}>
-        {children}
+      <body
+        className={cn("relative h-full font-sans antialiased", inter.className)}
+      >
+        {/* This flex and min-h-screen props put the footer at the end with 100vh default size , flex-1 makes the free space occupies */}
+        <main className="relative flex flex-col min-h-screen">
+          <div className="flex-grow flex-1">{children}</div>
+        </main>{" "}
       </body>
     </html>
   );
