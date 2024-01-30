@@ -1,3 +1,6 @@
+
+// cached.client = cached.promise
+
 import dotenv from 'dotenv'
 import path from 'path'
 import type { InitOptions } from 'payload/config'

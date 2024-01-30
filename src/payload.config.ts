@@ -21,10 +21,9 @@ export default buildConfig({
     admin: '/sell',
   },
   admin: {
-    user: 'users',
     bundler: webpackBundler(),
     meta: {
-      titleSuffix: '- DigitalHippo',
+      titleSuffix: '- digitalmarketplace',
       favicon: '/favicon.ico',
       ogImage: '/thumbnail.jpg',
     },
