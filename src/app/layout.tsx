@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import Navbar from "@/components/Navbar";
+import Providers from "@/components/Providers";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,8 +24,10 @@ export default function RootLayout({
       >
         {/* This flex and min-h-screen props put the footer at the end with 100vh default size , flex-1 makes the free space occupies */}
         <main className="relative flex flex-col min-h-screen">
-          <Navbar />
-          <div className="flex-grow flex-1">{children}</div>
+          <Providers>
+            <Navbar />
+            <div className="flex-grow flex-1">{children}</div>
+          </Providers>
         </main>{" "}
       </body>
     </html>

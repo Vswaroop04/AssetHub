@@ -48,10 +48,10 @@ const start = async () => {
   });
 
   nextApp.prepare().then(() => {
-    // payload.logger.info("NextJS Started");
+    payload.logger.info("NextJS Started");
 
     app.listen(PORT, async () => {
-      // payload.logger.info(`Ready on ${process.env.NEXT_PUBLIC_SERVER_URL}`);
+      payload.logger.info(`Ready on ${process.env.NEXT_PUBLIC_SERVER_URL}`);
     });
   });
 };
